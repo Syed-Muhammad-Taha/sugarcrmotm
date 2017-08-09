@@ -26,12 +26,12 @@ $dictionary['clg_Teacher']['fields']['clg_student_id'] = array(
     'massupdate'        => false,
     'duplicate_merge'   => 'disabled',
     );
-$dictionary['clg_Teacher']['fields']['clg_student'] = array(
-  	'name'          => 'clg_student',
+$dictionary['clg_Teacher']['fields']['clg_teacher_clg_student'] = array(
+  	'name'          => 'clg_teacher_clg_student',
     'type'          => 'link',
     'relationship'  => 'clg_teacher_clg_student',
     'module'        => 'clg_Student',
-    'bean_name'     => 'Student',
+    'bean_name'     => 'clg_Student',
     'source'        => 'non-db',
     'vname'         => 'LBL_STUDENTS',
     );
