@@ -11,7 +11,7 @@ $dictionary['clg_Student']['fields']['clg_teacher_clg_student'] = array(
     'module' => 'clg_Teacher',
     'bean_name' => 'clg_Teacher',
     'source' => 'non-db',
-    'vname' => 'LBL_TEACHER',
+    'vname' => 'LBL_TEACHERS',
     'link-type' => 'many'
     );
 

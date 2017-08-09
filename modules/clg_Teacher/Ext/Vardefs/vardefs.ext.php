@@ -13,7 +13,7 @@ $dictionary['clg_Teacher']['fields']['clg_student_name'] = array(
     'rname'     => 'name',
     'id_name'   => 'clg_student_id',
     'join_name' => 'clg_student',
-    'link'      => 'clg_student',
+    'link'      => 'clg_teacher_clg_student',
     'table'     => 'clg_student',
     'isnull'    => 'true',
     'module'    => 'clg_Student',
@@ -41,12 +41,13 @@ $dictionary['clg_Teacher']['fields']['clg_teacher_clg_student'] = array(
     'vname'         => 'LBL_STUDENTS',
     );
 $dictionary['clg_Teacher']['relationships']['clg_teacher_clg_student'] = array(
-    'lhs_module'		=> 'clg_Teacher',
-    'lhs_table'			=> 'test_flexparent',
-    'lhs_key'			=> 'student_id',
-    'rhs_module'		=> 'clg_Student',
-    'rhs_table'			=> 'clg_student',
-    'rhs_key'			=> 'id',
+  'name'          => 'clg_teacher_clg_student',
+    'rhs_module'		=> 'clg_Teacher',
+    'rhs_table'			=> 'clg_teacher',
+    'rhs_key'			=> 'clg_student_id',
+    'lhs_module'		=> 'clg_Student',
+    'lhs_table'			=> 'clg_student',
+    'lhs_key'			=> 'id',
     'relationship_type'	=> 'one-to-many',
     );
 
